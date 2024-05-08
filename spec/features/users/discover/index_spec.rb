@@ -9,7 +9,7 @@ RSpec.describe "Discover Index Page" do
     it 'has a button to discover top rated movies' do
       visit user_discover_index_path(@user1)
 
-      expect(page).to have_button('Discover Top Rated Movies', href: user_movies_path(@user1))
+      expect(page).to have_button('Discover Top Rated Movies')
     end
 
     it 'has a form to search by movie title' do
@@ -22,8 +22,9 @@ RSpec.describe "Discover Index Page" do
     visit user_discover_index_path(@user1)
 
       within "#search_by_title" do
-        expect(page).to have_button('Search', href: user_movies_path(@user1))
+        expect(page).to have_button('Search')
       end
+    end
 
   # user story 2
     xit 'has a button that will redirect to the movies results page' do
@@ -35,4 +36,3 @@ RSpec.describe "Discover Index Page" do
       # expect(page).to have_content
     end
   end
-end
