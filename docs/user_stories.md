@@ -14,7 +14,7 @@ When the user clicks on the Top Rated Movies OR the search button, they should b
 
 The movies will be retrieved by consuming The MovieDB API.
 
-2. Movie Results Page
+[ ] 2. Movie Results Page
 When I visit the discover movies page ('/users/:id/discover'),
 and click on either the Discover Top Rated Movies button or fill out the movie title search and click the Search button,
 I should be taken to the movies results page (`users/:user_id/movies`)/(user_movies_path(@user)) where I see: 

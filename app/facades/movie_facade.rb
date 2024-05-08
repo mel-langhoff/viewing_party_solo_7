@@ -6,14 +6,19 @@ class MovieFacade
 
   def movies
     @movie_service = MovieService.new
-    
+
     if @search_params == "top_rated"
       @movie_service.top_movies.take(20)
     else
       @movie_service.search_by_title(@search_params).take(20)
     end
   end
+
+  def vote_average
+    
+  end
 end
+
 
 #   def initialize(search_param)
 #     @search_param = search_param

@@ -1,13 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe MovieSearchFacade do
+RSpec.describe MovieFacade do
   it "exists" do
-    facade = MovieSearchFacade.new("Pulp")
+    facade = MovieFacade.new("Pulp")
 
-    expect(facade).to be_a MovieSearchFacade
+    expect(facade).to be_a MovieFacade
   end
 
-  it "#search_by_title" do
-    facade = MovieSearchFacade.new("Pulp")
+  it "#vote_average" do
+
   end
 end
