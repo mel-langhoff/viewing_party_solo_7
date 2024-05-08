@@ -6,7 +6,7 @@ class Movie
     @description = attributes[:overview]
     @cast = attributes[:cast]
     @runtime = attributes[:runtime]
-    @genres = attributes[:genres]
+    # @genres = attributes[:genres]
     @release_date = attributes[:release_date]
   end
 end
