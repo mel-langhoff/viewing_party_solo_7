@@ -1,10 +1,12 @@
 <h1>Discover Movies!</h1>
 
-#POWEROUT acc to chatgpt, top_rated is a common search term for APIs or something (look this shit up when you have internet)
-<%= button_to 'Discover Top Rated Movies', user_movies_path(@user), method: :get, params: { search: "top_rated" } %>
+<%# Since the API provides a specific endpoint for fetching top-rated movies, you can utilize this parameter to trigger the appropriate API call. #%>
+<%= button_to 'Discover Top Rates Movies!!!', url: user_movies_path(@user, search_params: 'top_rated'), method: :get, local: true %>
 
-<%= form_with url: user_movies_path(@user), method :get, local: true do |f| %>
-  <%= f.label :search_params, 'Enter a Movie Title' %>
-  <%= f.text_field :search_params %>
-  <%= f.submit 'Search' %>
-<% end %>
+<div id="search_by_title">
+  <%= form_with url: user_movies_path(@user), method: :get, local: true do |f| %>
+    <%= f.label :search_params, 'Enter a Movie Title' %>
+    <%= f.text_field :search_params %>
+    <%= f.submit 'Search' %>
+  <% end %>
+</div>

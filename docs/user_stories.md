@@ -1,8 +1,8 @@
 ## User Stories
 
-1. Discover Movies: Search by Title
+[X] 1. Discover Movies: Search by Title
 As a user,
-When I visit the '/users/:id/discover' path (where :id is the id of a valid user),
+When I visit the '/users/:id/discover' path (where :id is the id of a valid user),d
 I should see
 - a Button to Discover Top Rated Movies
 - a text field to enter keyword(s) to search by movie title
@@ -17,7 +17,7 @@ The movies will be retrieved by consuming The MovieDB API.
 2. Movie Results Page
 When I visit the discover movies page ('/users/:id/discover'),
 and click on either the Discover Top Rated Movies button or fill out the movie title search and click the Search button,
-I should be taken to the movies results page (`users/:user_id/movies`) where I see: 
+I should be taken to the movies results page (`users/:user_id/movies`)/(user_movies_path(@user)) where I see: 
 
 - Title (As a Link to the Movie Details page (see story #3))
 - Vote Average of the movie
