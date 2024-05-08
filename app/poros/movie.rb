@@ -3,8 +3,10 @@ class Movie
 
   def initialize(attributes)
     @title = attributes[:title]
+    @description = attributes[:overview]
+    @cast = attributes[:cast]
     @runtime = attributes[:runtime]
-    @genre = attributes[:genre]
+    @genres = attributes[:genres]
     @release_date = attributes[:release_date]
   end
 end

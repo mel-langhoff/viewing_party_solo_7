@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe MovieFacade do
+RSpec.describe MovieDataFacade do
   
 end

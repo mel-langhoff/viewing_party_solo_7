@@ -1,9 +1,10 @@
 class MovieSearchFacade
-  def initialize(movie)
-    @movie = movie
+
+  def initialize(search_param)
+    @search_param = search_param
   end
 
-  def search_by_title
+  def search_by_title(search_param)
     #code
   end
 end
