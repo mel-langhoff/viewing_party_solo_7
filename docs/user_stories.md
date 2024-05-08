@@ -1,3 +1,5 @@
+## User Stories
+
 1. Discover Movies: Search by Title
 As a user,
 When I visit the '/users/:id/discover' path (where :id is the id of a valid user),
