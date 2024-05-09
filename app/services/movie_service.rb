@@ -47,8 +47,6 @@ class MovieService
   end
 
   def get_cast(movie_id)
-    raise ArgumentError, "movie_id must be an Integer" unless movie_id.is_a?(Integer)
-
     response = get_url("3/movie/#{movie_id}/credits")
 
     response[:cast]
