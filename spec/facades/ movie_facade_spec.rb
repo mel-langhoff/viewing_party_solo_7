@@ -7,7 +7,7 @@ RSpec.describe MovieFacade do
     expect(facade).to be_a MovieFacade
   end
 
-  it "#vote_average" do
-
+  it "#movies" do
+    
   end
 end
