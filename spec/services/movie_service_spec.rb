@@ -15,7 +15,7 @@ describe MovieService do
     service = MovieService.new
 
     VCR.use_cassette("top_rated_movies") do
-      url = "movie/top_rated"
+      url = "3/movie/top_rated"
       parsed_json = service.get_url(url)
 
       expect(parsed_json).to be_a Hash
@@ -46,12 +46,12 @@ describe MovieService do
       end
     end
 
-    xit "returns an array of Movie objects" do
-      VCR.use_cassette("search_by_title") do
+    it "returns an array of Movie objects" do
+      VCR.use_cassette("array_of_movie_objs") do
         service = MovieService.new
 
         search_result = service.search_by_title("Pul")
-        expect(search_result[:results]).to be an Array
+        expect(search_result[:results]).to be_a Array
 
         search_result[:results].each do |movie_data|
           expect(movie_data).to be_a Hash

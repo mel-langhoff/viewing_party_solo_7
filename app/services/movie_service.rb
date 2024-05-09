@@ -2,7 +2,7 @@ class MovieService
 
   # sets http cxn using faraday
   def conn
-    Faraday.new(url: "https://api.themoviedb.org/3/") do |faraday|
+    Faraday.new(url: "https://api.themoviedb.org/") do |faraday|
       faraday.params["api_key"] = Rails.application.credentials.the_movie_db[:api_key]
     end
   end
@@ -15,11 +15,11 @@ class MovieService
 
   # endpoint for top movies
   def top_movies
-    get_url("movie/top_rated")
+    get_url("3/movie/top_rated&page=1")
   end
 
   def search_by_title(movie_title)
-    get_url("search/movie?query=#{movie_title}")
+    get_url("3/search/movie?query=#{movie_title}&page=1")
   end
 
 end

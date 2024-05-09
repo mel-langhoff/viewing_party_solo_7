@@ -5,16 +5,18 @@ class MovieFacade
   end
 
   def movies
-    movie_service = MovieService.new
+    @movie_service = MovieService.new
 
     if @search_param == "top_rated"
-      movies_data = movie_service.top_movies.take(20)
+      movies_data = @movie_service.top_movies
     else
-      movies_data = movie_service.search_by_title(@search_param).take(20)
+      movies_data = @movie_service.search_by_title(@search_param)
     end
 
-    movies_data.map do |movie_data|
+    movies_array = movies_data.map do |movie_data|
       Movie.new(movie_data)
     end
+
+    movies_array.compact
   end
 end

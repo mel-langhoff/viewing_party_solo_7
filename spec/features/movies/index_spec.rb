@@ -41,7 +41,7 @@ RSpec.describe "Movie Results Page" do
       click_button 'Search'
 
       within "#movie_data" do
-        expect(page).to have_link('Pulp Fiction', href: user_movie_path(@user1, @facade.movies.first.id))
+        expect(page).to have_link('Pulp Fiction', href: user_movie_path(@user1, @facade.movies.first))
       end
     end
   end
