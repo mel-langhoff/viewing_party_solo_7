@@ -22,5 +22,4 @@ class MovieService
     get_url("search/movie?query=#{movie_title}")
   end
 
-  
 end

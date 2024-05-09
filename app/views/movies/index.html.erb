@@ -1,3 +1,8 @@
 <h1>Movie Results</h1>
 
-@movies.enum goes here
+<% @facade.movies.each do |movie| %>
+  <ol>
+    <li><%= link_to "#{movie.title}", user_movie_path(@user, movie.id) %></li>
+    <li>Vote Average for <%= movie.title %>: <%= movie.vote_average %></li>
+  </ol>
+<% end %>
