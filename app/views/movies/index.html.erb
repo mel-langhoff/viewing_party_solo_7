@@ -3,8 +3,10 @@
 <ol>
   <% @facade.movies.each do |movie| %>
     <div id="movie_data">
-      <li><%= link_to "#{movie.title}", user_movie_path(@user, movie.id) %>
-      <p>Vote Average for <%= movie.title %>: <%= movie.vote_average %></li>
+      <li>
+      <%= link_to movie.title, user_movie_path(@user, movie.id) %>
+      <p>Vote Average for <%= movie.title %>: <%= movie.vote_average %></p>
+      </li>
     </div>
   <% end %>
 </ol>
