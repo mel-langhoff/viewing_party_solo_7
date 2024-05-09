@@ -9,13 +9,14 @@ class Movie
               :id
 
   def initialize(attributes)
+    @id = attributes[:id]
     @title = attributes[:title]
     @description = attributes[:overview]
     @cast = attributes[:cast]
     @genres = attributes[:genres]
     @release_date = attributes[:release_date]
     @vote_average = attributes[:vote_average]
-    @runtime = attributes[:runtime]
+    @runtime = attributes[:runtime].to_f
     @formatted_runtime = format_runtime(@runtime)
   end
 

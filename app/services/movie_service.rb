@@ -30,19 +30,33 @@ class MovieService
     # reviews = response[:results].map do |review_data|
     #     MovieReview.new(review_data)
     # end
+  # # end
+
+  # def full_movie_data(movie_id)
+  #   reviews = get_url("3/movie/#{movie_id}/reviews")
+  #   creds = get_url("3/movie/#{movie_id}/credits?language=en-US")
+  #   deets = get_url("3/movie/#{movie_id}?language=en-US")
+
+  #   all_data = deets.merge(creds).merge(reviews)
   # end
-
-  def full_movie_data(movie_id)
-    reviews = get_url("/3/movie/#{movie_id}/reviews")
-    creds = get_url("/3/movie/#{movie_id}/credits")
-    deets = get_url("/3/movie/#{movie_id}")
-
-    all_data = deets.merge(creds).merge(reviews)
-  end
 
   def get_genres
     response = get_url("3/genre/movie/list")
 
     response[:genres]
+  end
+
+  def get_cast(movie_id)
+    raise ArgumentError, "movie_id must be an Integer" unless movie_id.is_a?(Integer)
+
+    response = get_url("3/movie/#{movie_id}/credits")
+
+    response[:cast]
+  end
+
+  def get_reviews(movie_id)
+    response = get_url("3/movie/#{movie_id}/reviews")
+
+    response[:results]
   end
 end

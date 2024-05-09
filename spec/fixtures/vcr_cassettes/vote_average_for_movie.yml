@@ -25,34 +25,36 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Thu, 09 May 2024 18:34:14 GMT
+      - Thu, 09 May 2024 20:08:37 GMT
       Server:
       - openresty
       Cache-Control:
-      - public, max-age=4392
+      - public, max-age=23018
       X-Memc:
       - HIT
       X-Memc-Key:
       - 64a9b21d5a16e1ce099b46e564cd8595
       X-Memc-Age:
-      - '17258'
+      - '1184'
       X-Memc-Expires:
-      - '4392'
+      - '23018'
       Etag:
-      - W/"22084a3a2a4fa81601da22597fa865e6"
+      - W/"7bb73a3d0f2225a7665210c8a2c65c38"
       Vary:
       - Accept-Encoding,accept-encoding
       - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 29f1da35ce271d2cdc88184ed0c1f86c.cloudfront.net (CloudFront)
+      - 1.1 ec4d04f2befcd6652834fd368a8b671e.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - PHXeieRyAd2xSLUHfCTFpLLPmEauB9eNFVebKNl5Bi_mTpuC_kjWgg==
+      - 3j1O6W-IoEQHbqn1ppTOkP8dDIbnj7fzVn0h9Q1MMbqzoRQL7-vAyA==
+      Age:
+      - '11919'
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg","genre_ids":[53,80],"id":680,"original_language":"en","original_title":"Pulp
@@ -60,7 +62,7 @@ http_interactions:
         drug-addled gangster''s moll and a washed-up boxer converge in this sprawling,
         comedic crime caper. Their adventures unfurl in three stories that ingeniously
         trip back and forth in time.","popularity":369.64,"poster_path":"/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg","release_date":"1994-09-10","title":"Pulp
-        Fiction","video":false,"vote_average":8.489,"vote_count":27045},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":295641,"original_language":"en","original_title":"Pulp
+        Fiction","video":false,"vote_average":8.489,"vote_count":27046},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":295641,"original_language":"en","original_title":"Pulp
         Fiction: The Golden Age of Storytelling","overview":"This program profiles
         writers of the 20s, 30s, and 40s--known as the Pulp Fiction era. These writers
         created the iconic movies and characters who live on today in our collective
@@ -85,7 +87,7 @@ http_interactions:
         Tragedy Of Macwes","overview":"The fearless knight Apallo learns that he is
         in over his head when attempting to proclaim his love to a princess.","popularity":0.6,"poster_path":"/iLBoU6n0OtnWF2MoUSVhBqeB8jS.jpg","release_date":"","title":"The
         Tragedy Of Macwes","video":false,"vote_average":0.0,"vote_count":0}],"total_pages":1,"total_results":6}'
-  recorded_at: Thu, 09 May 2024 18:34:14 GMT
+  recorded_at: Thu, 09 May 2024 23:27:16 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/search/movie?api_key=<MOVIE_DB_API_KEY>&include_adult=false&include_video=false&language=en-US&query=Pulp%20Fiction
@@ -111,34 +113,36 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Thu, 09 May 2024 18:34:14 GMT
+      - Thu, 09 May 2024 20:08:37 GMT
       Server:
       - openresty
       Cache-Control:
-      - public, max-age=4392
+      - public, max-age=23018
       X-Memc:
       - HIT
       X-Memc-Key:
       - 64a9b21d5a16e1ce099b46e564cd8595
       X-Memc-Age:
-      - '17258'
+      - '1184'
       X-Memc-Expires:
-      - '4392'
+      - '23018'
       Etag:
-      - W/"22084a3a2a4fa81601da22597fa865e6"
+      - W/"7bb73a3d0f2225a7665210c8a2c65c38"
       Vary:
       - Accept-Encoding,accept-encoding
       - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 2ad801a60bd36fbeb6a62fab7eabe330.cloudfront.net (CloudFront)
+      - 1.1 e7ff4a714a3b1f464db9c76ee954a564.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - Y8ddSVHM6YH10jU0rGwSTUuomwbMEgy8Xvf8u5jclzQw12AV0bq7FA==
+      - 07VzOHKhUqKv3YSVq4x1GiqBPwViFJF3PxcNWKpQxo0Iq7eeEYNljg==
+      Age:
+      - '11919'
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg","genre_ids":[53,80],"id":680,"original_language":"en","original_title":"Pulp
@@ -146,7 +150,7 @@ http_interactions:
         drug-addled gangster''s moll and a washed-up boxer converge in this sprawling,
         comedic crime caper. Their adventures unfurl in three stories that ingeniously
         trip back and forth in time.","popularity":369.64,"poster_path":"/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg","release_date":"1994-09-10","title":"Pulp
-        Fiction","video":false,"vote_average":8.489,"vote_count":27045},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":295641,"original_language":"en","original_title":"Pulp
+        Fiction","video":false,"vote_average":8.489,"vote_count":27046},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":295641,"original_language":"en","original_title":"Pulp
         Fiction: The Golden Age of Storytelling","overview":"This program profiles
         writers of the 20s, 30s, and 40s--known as the Pulp Fiction era. These writers
         created the iconic movies and characters who live on today in our collective
@@ -171,5 +175,5 @@ http_interactions:
         Tragedy Of Macwes","overview":"The fearless knight Apallo learns that he is
         in over his head when attempting to proclaim his love to a princess.","popularity":0.6,"poster_path":"/iLBoU6n0OtnWF2MoUSVhBqeB8jS.jpg","release_date":"","title":"The
         Tragedy Of Macwes","video":false,"vote_average":0.0,"vote_count":0}],"total_pages":1,"total_results":6}'
-  recorded_at: Thu, 09 May 2024 18:34:14 GMT
+  recorded_at: Thu, 09 May 2024 23:27:16 GMT
 recorded_with: VCR 6.2.0

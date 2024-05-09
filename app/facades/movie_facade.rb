@@ -36,21 +36,30 @@ class MovieFacade
   #   end
   # end
 
-  def movie(movie_id)
-    service = MovieService.new
-    movies_data_json = service.full_movie_data(movie_id)
+  # def movie(movie_id)
+  #   service = MovieService.new
+  #   movies_data_json = service.full_movie_data(movie_id)
 
-    @movie = Movie.new(movies_data_json)
-  end
+  #   Movie.new(movies_data_json)
+  # end
 
   def genres
     service = MovieService.new
-    genres_data_json = service.get_genres
+    genres_data = service.get_genres
     genres_hash = {}
 
     genres_data[:genres].each do |genre|
       genres_hash[genre[:id]] = genre[:name]
     end
     genres_hash
+  end
+
+  def cast(movie_id)
+    service = MovieService.new
+    cast_data = service.get_cast(movie_id)
+
+    cast_data.map do |cast_member_data|
+      CastMember.new(cast_member_data)
+    end
   end
 end
