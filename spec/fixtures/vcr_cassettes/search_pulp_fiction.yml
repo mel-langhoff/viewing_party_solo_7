@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/search/movie?api_key=<MOVIE_DB_API_KEY>&page=1&query=Pulp%20Fiction
+    uri: https://api.themoviedb.org/3/search/movie?api_key=<MOVIE_DB_API_KEY>&include_adult=false&include_video=false&language=en-US&query=Pulp%20Fiction
     body:
       encoding: US-ASCII
       string: ''
@@ -25,36 +25,34 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Thu, 09 May 2024 02:51:23 GMT
+      - Thu, 09 May 2024 04:02:28 GMT
       Server:
       - openresty
       Cache-Control:
-      - public, max-age=17471
+      - public, max-age=13206
       X-Memc:
       - HIT
       X-Memc-Key:
       - 64a9b21d5a16e1ce099b46e564cd8595
       X-Memc-Age:
-      - '8875'
+      - '13140'
       X-Memc-Expires:
-      - '17471'
+      - '13206'
       Etag:
       - W/"304c83be92048f7c6f4cc579879498db"
       Vary:
       - Accept-Encoding,accept-encoding
       - Origin
       X-Cache:
-      - Hit from cloudfront
+      - Miss from cloudfront
       Via:
-      - 1.1 5539e869b7b6ea60eddee5f69c9a0d9c.cloudfront.net (CloudFront)
+      - 1.1 e466a87164c3f9591e3c8ac45a4b2074.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - tcpHXkMlnz2P8jJnNjTvOkfRyIb6zAC1YrUjhWNOuVCfOo9mPzxw5g==
-      Age:
-      - '1992'
+      - Mw4SsSUY5Q4ukexXeWVdBrg4pl4909J5M64PmpD2j5nUHnvUuWwPOQ==
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg","genre_ids":[53,80],"id":680,"original_language":"en","original_title":"Pulp
@@ -87,5 +85,5 @@ http_interactions:
         Tragedy Of Macwes","overview":"The fearless knight Apallo learns that he is
         in over his head when attempting to proclaim his love to a princess.","popularity":0.6,"poster_path":"/iLBoU6n0OtnWF2MoUSVhBqeB8jS.jpg","release_date":"","title":"The
         Tragedy Of Macwes","video":false,"vote_average":0.0,"vote_count":0}],"total_pages":1,"total_results":6}'
-  recorded_at: Thu, 09 May 2024 03:24:36 GMT
+  recorded_at: Thu, 09 May 2024 04:02:28 GMT
 recorded_with: VCR 6.2.0

@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=<MOVIE_DB_API_KEY>&include_adult=false&include_video=false&language=en-US&query=Pulp%20Fiction
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 09 May 2024 04:02:28 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=13206
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 64a9b21d5a16e1ce099b46e564cd8595
+      X-Memc-Age:
+      - '13140'
+      X-Memc-Expires:
+      - '13206'
+      Etag:
+      - W/"304c83be92048f7c6f4cc579879498db"
+      Vary:
+      - Accept-Encoding,accept-encoding
+      - Origin
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 ea02982ea8ec84214c2e0d4d803fb0f4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-C1
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - mKia-0X-50YC6OOMJQFpsIkmYcboISSqP23udmg01_lm_elFA8UTxg==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg","genre_ids":[53,80],"id":680,"original_language":"en","original_title":"Pulp
+        Fiction","overview":"A burger-loving hit man, his philosophical partner, a
+        drug-addled gangster''s moll and a washed-up boxer converge in this sprawling,
+        comedic crime caper. Their adventures unfurl in three stories that ingeniously
+        trip back and forth in time.","popularity":379.265,"poster_path":"/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg","release_date":"1994-09-10","title":"Pulp
+        Fiction","video":false,"vote_average":8.5,"vote_count":27042},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":295641,"original_language":"en","original_title":"Pulp
+        Fiction: The Golden Age of Storytelling","overview":"This program profiles
+        writers of the 20s, 30s, and 40s--known as the Pulp Fiction era. These writers
+        created the iconic movies and characters who live on today in our collective
+        hearts and imaginations. It has even been estimated that 90-95% of the top
+        blockbusters in Hollywood movies were based on stories from the Pulp Fiction
+        era.","popularity":0.6,"poster_path":"/x7siHmBxskdiL8Z2thRzeGajPm4.jpg","release_date":"2009-01-01","title":"Pulp
+        Fiction: The Golden Age of Storytelling","video":false,"vote_average":4.0,"vote_count":1},{"adult":false,"backdrop_path":null,"genre_ids":[35],"id":738735,"original_language":"en","original_title":"Stealing
+        Pulp Fiction","overview":"A diehard Quentin Tarantino fan recruits his friend
+        Elizabeth to steal a 35mm film reel of Pulp Fiction.","popularity":0.859,"poster_path":"/5OHH3y2v8uwluOZLC2Kt8ENcjxn.jpg","release_date":"2020-09-01","title":"Stealing
+        Pulp Fiction","video":false,"vote_average":0.0,"vote_count":0},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":109005,"original_language":"en","original_title":"Pulp
+        Fiction Art: Cheap Thrills \u0026 Painted Nightmares","overview":"A guilty
+        pleasure of the mid-20th century, pulp fiction magazines were often defined
+        less by their contents than by their provocative covers. This documentary
+        explores the shocking art that brought life to these lurid publications. Filmmaker
+        Jamie McDonald delves into the collection of art historian Robert Lesser,
+        shedding light on this nearly forgotten art form and the ways it impacted
+        popular culture.","popularity":0.6,"poster_path":"/pVpCuDyyvt3HRjVEYUUBOqrio7F.jpg","release_date":"2005-01-01","title":"Pulp
+        Fiction Art: Cheap Thrills \u0026 Painted Nightmares","video":false,"vote_average":5.5,"vote_count":4},{"adult":false,"backdrop_path":null,"genre_ids":[35],"id":1284950,"original_language":"fr","original_title":"Pulp
+        Fiction : You Never Can Tell","overview":"A low-budget adaptation of the dance
+        scene from Quentin Tarantino''s Pulp Fiction.","popularity":2.529,"poster_path":"/lWbGSJguObJzsbLbeB2bCFL4NF2.jpg","release_date":"2024-05-29","title":"Pulp
+        Fiction : You Never Can Tell","video":false,"vote_average":0.0,"vote_count":0},{"adult":false,"backdrop_path":null,"genre_ids":[18,10402,28,36,35,14],"id":1071134,"original_language":"en","original_title":"The
+        Tragedy Of Macwes","overview":"The fearless knight Apallo learns that he is
+        in over his head when attempting to proclaim his love to a princess.","popularity":0.6,"poster_path":"/iLBoU6n0OtnWF2MoUSVhBqeB8jS.jpg","release_date":"","title":"The
+        Tragedy Of Macwes","video":false,"vote_average":0.0,"vote_count":0}],"total_pages":1,"total_results":6}'
+  recorded_at: Thu, 09 May 2024 04:02:28 GMT
+recorded_with: VCR 6.2.0

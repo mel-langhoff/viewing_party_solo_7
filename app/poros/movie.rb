@@ -8,7 +8,7 @@ class Movie
               :runtime
 
   def initialize(attributes)
-    # require 'pry'; binding.pry
+# require 'pry'; binding.pry
     @title = attributes[:title]
     @description = attributes[:overview]
     @cast = attributes[:cast]

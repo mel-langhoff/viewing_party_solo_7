@@ -1,22 +1,28 @@
 class MovieFacade
+  attr_reader :search_param
 
   def initialize(search_param)
     @search_param = search_param
   end
 
   def movies
-    @movie_service = MovieService.new
+    service = MovieService.new
 
     if @search_param == "top_rated"
-      movies_data = @movie_service.top_movies
+        json = service.top_movies
     else
-      movies_data = @movie_service.search_by_title(@search_param)
+        json = service.search_by_title(@search_param)
     end
 
+    # results from json response (used #get_url in service spec)
+    movies_data = json[:results]
+
+    # map movies_data to Movie objects
     movies_array = movies_data.map do |movie_data|
-      Movie.new(movie_data)
+        Movie.new(movie_data)
     end
 
     movies_array.compact
   end
+
 end

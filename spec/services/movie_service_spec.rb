@@ -15,7 +15,7 @@ describe MovieService do
     service = MovieService.new
 
     VCR.use_cassette("top_rated_movies") do
-      url = "3/movie/top_rated"
+      url = "3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_average.desc&without_genres=99,10755&vote_count.gte=200"
       parsed_json = service.get_url(url)
 
       expect(parsed_json).to be_a Hash

@@ -15,11 +15,11 @@ class MovieService
 
   # endpoint for top movies
   def top_movies
-    get_url("3/movie/top_rated&page=1")
+    get_url("3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_average.desc&without_genres=99,10755&vote_count.gte=200")
   end
 
   def search_by_title(movie_title)
-    get_url("3/search/movie?query=#{movie_title}&page=1")
+    get_url("3/search/movie?query=#{movie_title}&include_adult=false&include_video=false&language=en-US")
   end
 
 end
