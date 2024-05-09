@@ -40,11 +40,11 @@ class MovieService
   #   all_data = deets.merge(creds).merge(reviews)
   # end
 
-  def get_genres
-    response = get_url("3/genre/movie/list")
+  # def get_genres
+  #   response = get_url("3/genre/movie/list")
 
-    response[:genres]
-  end
+  #   response[:genres]
+  # end
 
   def get_cast(movie_id)
     response = get_url("3/movie/#{movie_id}/credits")

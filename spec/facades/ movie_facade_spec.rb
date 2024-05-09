@@ -45,15 +45,28 @@ RSpec.describe MovieFacade do
     expect(cast).to be_an(Array)
   end
 
-  it "#genres" do
+  # it "#genres" do
+  #   facade = MovieFacade.new("Pulp Fiction")
+
+  #   VCR.use_cassette("genres_list") do
+  #     genres_hash = facade.genres
+      
+  #     expect(genres_hash).to be_a Hash
+  #     expect(genres_hash).to have_value("Thriller")
+  #     expect(genres_hash).to have_value("Crime")
+  #   end
+  # end
+
+  it "#reviews" do
     facade = MovieFacade.new("Pulp Fiction")
 
-    VCR.use_cassette("genres_list") do
-      genres_hash = facade.genres
-      
-      expect(genres_hash).to be_a Hash
-      expect(genres_hash).to have_value("Thriller")
-      expect(genres_hash).to have_value("Crime")
+    VCR.use_cassette("reviews") do
+      reviews = facade.reviews(680)
+
+      expect(reviews).to be_a Array
+      reviews.each do |review|
+        expect(review).to be_a Review
+      end
     end
   end
 end
