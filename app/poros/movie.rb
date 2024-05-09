@@ -5,7 +5,8 @@ class Movie
               :genres,
               :release_date,
               :vote_average,
-              :runtime
+              :runtime,
+              :id
 
   def initialize(attributes)
 # require 'pry'; binding.pry
@@ -16,5 +17,6 @@ class Movie
     @release_date = attributes[:release_date]
     @vote_average = attributes[:vote_average]
     @runtime = attributes[:runtime]
+    @id = attributes[:id]
   end
 end

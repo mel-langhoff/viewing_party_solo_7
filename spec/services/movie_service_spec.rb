@@ -10,7 +10,6 @@ describe MovieService do
     expect(connection.params["api_key"]).to eq(Rails.application.credentials.the_movie_db[:api_key])
   end
 
-  # Use VCR, use the 'top_rated_movies' cassette
   it "#get_url" do
     service = MovieService.new
 
