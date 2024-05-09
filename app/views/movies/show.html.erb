@@ -7,7 +7,11 @@
     <ol>
       <li>Vote Average: <%= @facade.movie.vote_average %></li>
       <li>Runtime: <%= @facade.movie.formatted_runtime %></li>
-      <li>Genres: <%= @facade.movie.genres %></li>
+      <li>Genres: 
+        <% @facade.genres.each do |genre| %>
+          <%= genre.name %>
+        <% end %>
+      </li>
       <li>Summary: <%= @facade.movie.description %></li>
       <li>Cast Members:
         <ul>

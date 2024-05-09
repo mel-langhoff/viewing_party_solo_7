@@ -42,4 +42,15 @@ class MovieFacade
 
     @movie = Movie.new(movies_data_json)
   end
+
+  def genres
+    service = MovieService.new
+    genres_data_json = service.get_genres
+    genres_hash = {}
+
+    genres_data[:genres].each do |genre|
+      genres_hash[genre[:id]] = genre[:name]
+    end
+    genres_hash
+  end
 end

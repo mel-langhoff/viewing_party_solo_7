@@ -16,7 +16,8 @@ RSpec.describe "Movie Details Page" do
     expect(page).to have_content(@facade.movies.first.genres)
     expect(page).to have_content(@facade.movies.first.description)
     expect(page).to have_content(@facade.movies.first.cast)
-    # expect(page).to have_content(@facade.movies.first.review_count)
-    # expect(page).to have_content(@facade.movies.first.reviewers)
+    expect(page).to have_content(@facade.movies.first.reviews)
+    expect(page).to have_content(@facade.movies.first.reviews.first.content)
+    expect(page).to have_content(@facade.movies.first.reviews.first.author)
   end
 end
