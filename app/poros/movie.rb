@@ -9,7 +9,6 @@ class Movie
               :id
 
   def initialize(attributes)
-# require 'pry'; binding.pry
     @title = attributes[:title]
     @description = attributes[:overview]
     @cast = attributes[:cast]
@@ -17,6 +16,14 @@ class Movie
     @release_date = attributes[:release_date]
     @vote_average = attributes[:vote_average]
     @runtime = attributes[:runtime]
-    @id = attributes[:id]
+    @formatted_runtime = format_runtime(@runtime)
+  end
+
+  # should this be private?
+  def format_runtime(runtime)
+    hours = runtime / 60
+    minutes = runtime / 60
+
+    "#{hours} hours and #{minutes} minutes"
   end
 end

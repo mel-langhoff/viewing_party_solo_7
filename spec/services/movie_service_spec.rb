@@ -58,4 +58,40 @@ describe MovieService do
       end
     end
   end
+
+  describe "#full_movie_data" do
+    it 'returns a merged hash with movie deets, credz, and reviews' do
+      VCR.use_cassette('full_movie_data') do
+        service = MovieService.new
+
+        all_data = service.full_movie_data(10)
+
+        expect(full_data).to be_a Hash
+        expect(full_data).to have_key(:reviews)
+        expect(full_data).to have_key(:credits)
+        expect(full_data).to have_key(:id)
+
+        expect(full_data[:credits]).to be_a Hash
+        expect(full_data[:credits]).to have_key(:cast)
+        expect(full_data[:credits]).to have_key(:crew)
+        expect(full_data[:reviews]).to be_a Hash
+        
+      end
+    end
+  end
+
+  # describe "#get_movie_reviews" do
+  #   xit "returns an array of MovieReview objs" do
+  #     VCR.use_cassette('movie_reviews') do
+  #       service = MovieService.new
+  #       reviews = service.get_movie_reviews(10)
+
+  #       expect(reviews[:results]).to be_a Array
+        
+  #       reviews.each do |review|
+  #         expect(review).to be_an_instance_of MovieReview
+  #       end
+  #     end
+  #   end
+  # end
 end

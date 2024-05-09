@@ -18,8 +18,25 @@ class MovieService
     get_url("3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_average.desc&without_genres=99,10755&vote_count.gte=200")
   end
 
+  # search endpoint
   def search_by_title(movie_title)
     get_url("3/search/movie?query=#{movie_title}&include_adult=false&include_video=false&language=en-US")
   end
 
+  # put parsing in facade?
+  # def get_movie_reviews(movie_id)
+  #   get_url("3/movie/#{movie_id}/reviews")
+
+    # reviews = response[:results].map do |review_data|
+    #     MovieReview.new(review_data)
+    # end
+  # end
+
+  def full_movie_data(movie_id)
+    reviews = get_url("/3/movie/#{movie_id}/reviews")
+    creds = get_url("/3/movie/#{movie_id}/credits")
+    deets = get_url("/3/movie/#{movie_id}")
+
+    all_data = deets.merge(creds).merge(reviews)
+  end
 end

@@ -5,6 +5,7 @@ class MovieFacade
     @search_param = search_param
   end
 
+  # put json in service?
   def movies
     service = MovieService.new
 
@@ -24,5 +25,21 @@ class MovieFacade
 
     # .compact gets rid of nils
     movies_array.compact
+  end
+
+  # def reviews(movie_id)
+  #   service = MovieService.new
+  #   json = service.get_movie_reviews(movie_id)
+
+  #   json[:results].map do |review|
+  #     MovieReview.new(review)
+  #   end
+  # end
+
+  def movie(movie_id)
+    service = MovieService.new
+    movies_data_json = service.full_movie_data(movie_id)
+
+    @movie = Movie.new(movies_data_json)
   end
 end

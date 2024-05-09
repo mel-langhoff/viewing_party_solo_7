@@ -14,7 +14,7 @@ When the user clicks on the Top Rated Movies OR the search button, they should b
 
 The movies will be retrieved by consuming The MovieDB API.
 
-[ ] 2. Movie Results Page
+[/] 2. Movie Results Page
 When I visit the discover movies page ('/users/:id/discover'),
 and click on either the Discover Top Rated Movies button or fill out the movie title search and click the Search button,
 I should be taken to the movies results page (`users/:user_id/movies`)/(user_movies_path(@user)) where I see: 
@@ -28,7 +28,7 @@ Notes:
 
 There should only be a maximum of 20 results. The above details should be listed for each movie
 
-3. Movie Details Page
+[ ] 3. Movie Details Page
 As a user, 
 When I visit a movie's detail page (`/users/:user_id/movies/:movie_id`) where :id is a valid user id,
 I should see

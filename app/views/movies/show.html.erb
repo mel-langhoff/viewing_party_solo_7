@@ -1,0 +1,25 @@
+<h1>Movie Details Page</h1>
+
+<%# button_to Create a Viewing Party %>
+<%# button_to Return to the Discover Page %>
+
+  <h3>Details and Info About <%= @facade.movie.title %>:
+    <ol>
+      <li>Vote Average: <%= @facade.movie.vote_average %></li>
+      <li>Runtime: <%= @facade.movie.formatted_runtime %></li>
+      <li>Genres: <%= @facade.movie.genres %></li>
+      <li>Summary: <%= @facade.movie.description %></li>
+      <li>Cast Members:
+        <ul>
+          <% @facade.movie.cast.each do |cast_member| %>
+            <li><%= cast_member.name %> - <%= cast_member.character %></li>
+          <% end %>
+        </ul>
+        <li>Reviews:
+          <ul>
+            <% @facade.movie.reviews.each do |review| %>
+              <li>What does <%= review.author %> think?:
+              <p><%= review.content %></li>
+            </ul>
+          </li>
+    </ol>
