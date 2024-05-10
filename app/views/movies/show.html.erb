@@ -3,27 +3,28 @@
 <%# button_to Create a Viewing Party %>
 <%# button_to Return to the Discover Page %>
 
-  <h3>Details and Info About <%= @facade.movie.title %>:
+  <h3>Details and Info About <%= @movie.title %>:
     <ol>
-      <li>Vote Average: <%= @facade.movie.vote_average %></li>
-      <li>Runtime: <%= @facade.movie.formatted_runtime %></li>
+      <li>Vote Average: <%= @movie.vote_average %></li>
+      <li>Runtime: <%= @movie.runtime %></li>
       <li>Genres: 
-        <% @facade.genres.each do |genre| %>
-          <%= genre.name %>
+        <% @movie.genres.each do |genre| %>
+          <%= genre[:name] %>
         <% end %>
       </li>
-      <li>Summary: <%= @facade.movie.description %></li>
+      <li>Summary: <%= @movie.description %></li>
       <li>Cast Members:
         <ul>
-          <% @facade.movie.cast.each do |cast_member| %>
+          <% @cast_members.each do |cast_member| %>
             <li><%= cast_member.name %> - <%= cast_member.character %></li>
           <% end %>
         </ul>
         <li>Reviews:
           <ul>
-            <% @facade.movie.reviews.each do |review| %>
+            <% @reviews.each do |review| %>
               <li>What does <%= review.author %> think?:
-              <p><%= review.content %></li>
+              <p><%= review.review %></li>
             </ul>
           </li>
+          <% end %>
     </ol>

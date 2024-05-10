@@ -6,7 +6,8 @@ class Movie
               :vote_average,
               :runtime,
               :id,
-              :genres
+              :genres,
+              :description
 
   def initialize(attributes)
     @id = attributes[:id]
@@ -17,7 +18,6 @@ class Movie
     @release_date = attributes[:release_date]
     @vote_average = attributes[:vote_average]
     @runtime = attributes[:runtime].to_f
-    @formatted_runtime = format_runtime(@runtime)
     # @formatted_genres = format_genres(@genres)
   end
 
