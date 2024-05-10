@@ -1,0 +1,14 @@
+<h1>Movie Results</h1>
+
+<div id="movies_data">
+<ol>
+  <% @facade.movies.each do |movie| %>
+    <div id="movie_data_<%= movie.id %>">
+      <li>
+      <%= link_to movie.title, user_movie_path(@user, movie) %>
+      <p>Vote Average for <%= movie.title %>: <%= movie.vote_average %></p>
+      </li>
+    </div>
+  <% end %>
+</ol>
+</div>

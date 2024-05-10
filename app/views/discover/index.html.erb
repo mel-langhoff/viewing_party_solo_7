@@ -1,0 +1,12 @@
+<h1>Discover Movies!</h1>
+
+<%# Since the API provides a specific endpoint for fetching top-rated movies, you can utilize this parameter to trigger the appropriate API call. #%>
+<%= link_to 'Discover Top Rated Movies', user_movies_path(@user, search_param: 'top_rated') %>
+
+<div id="search_by_title">
+  <%= form_with url: user_movies_path(@user), method: :get, local: true do |f| %>
+    <%= f.label :search_param, 'Enter a Movie Title' %>
+    <%= f.text_field :search_param %>
+    <%= f.submit 'Search' %>
+  <% end %>
+</div>

@@ -31,6 +31,9 @@ module ViewingPartyLite7
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
+    # adds lib dir to app's autoload filepaths
+    # config.autoload_paths += %W(#{config.root}/lib)
+
     # Don't generate system test files.
     config.generators.system_tests = nil
   end

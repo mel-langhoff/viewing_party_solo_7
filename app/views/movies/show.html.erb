@@ -1,0 +1,30 @@
+<h1>Movie Details Page</h1>
+
+<% link_to 'Create a Viewing Party', new_user_movie_viewing_party(@user) %>
+<%= link_to 'Return to the Discover Page', user_discover_index_path(@user) %>
+
+  <h3>Details and Info About <%= @movie.title %>:
+    <ol>
+      <li>Vote Average: <%= @movie.vote_average %></li>
+      <li>Runtime: <%= @movie.runtime %></li>
+      <li>Genres: 
+        <% @movie.genres.each do |genre| %>
+          <%= genre[:name] %>
+        <% end %>
+      </li>
+      <li>Summary: <%= @movie.description %></li>
+      <li>Cast Members:
+        <ul>
+          <% @cast_members.each do |cast_member| %>
+            <li><%= cast_member.name %> - <%= cast_member.character %></li>
+          <% end %>
+        </ul>
+        <li>Reviews:
+          <ul>
+            <% @reviews.each do |review| %>
+              <li>What does <%= review.author %> think?:
+              <p><%= review.review %></li>
+            </ul>
+          </li>
+          <% end %>
+    </ol>
