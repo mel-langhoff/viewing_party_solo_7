@@ -25,7 +25,7 @@ RSpec.describe "Movie Details Page" do
     movie_id = @facade.movies.first.id
     visit user_movie_path(@user1, movie_id)
 
-    expect(page).to have_link('Create a Viewing Party', href: )
+    expect(page).to have_link('Create a Viewing Party', href: new_user_movie_viewing_party_path(@user1) )
   end
 
   xit "has a link to return to discover page" do

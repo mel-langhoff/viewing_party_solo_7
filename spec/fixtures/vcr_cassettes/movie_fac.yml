@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/680?api_key=<MOVIE_DB_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 10 May 2024 14:37:15 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=19341
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 7a54e06b3b2af955542021ed91fbe958
+      X-Memc-Age:
+      - '3888'
+      X-Memc-Expires:
+      - '19341'
+      Etag:
+      - W/"98f8394b3de647b6fb9d21df466275dd"
+      Vary:
+      - Accept-Encoding,accept-encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 9427b8c01c70c4a2deb16eed5a2ced9c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-C1
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - YGlsgiWKILrB3vBqX3T-7gL5U6PAe6z-pqgrd1xGzx2liFNNLg6TaA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvc3VhRU90azFOMXNnZzJNVE03b1pkMmNmVnAzLmpwZyIsImJlbG9uZ3NfdG9fY29sbGVjdGlvbiI6bnVsbCwiYnVkZ2V0Ijo4NTAwMDAwLCJnZW5yZXMiOlt7ImlkIjo1MywibmFtZSI6IlRocmlsbGVyIn0seyJpZCI6ODAsIm5hbWUiOiJDcmltZSJ9XSwiaG9tZXBhZ2UiOiJodHRwczovL3d3dy5taXJhbWF4LmNvbS9tb3ZpZS9wdWxwLWZpY3Rpb24vIiwiaWQiOjY4MCwiaW1kYl9pZCI6InR0MDExMDkxMiIsIm9yaWdpbl9jb3VudHJ5IjpbIlVTIl0sIm9yaWdpbmFsX2xhbmd1YWdlIjoiZW4iLCJvcmlnaW5hbF90aXRsZSI6IlB1bHAgRmljdGlvbiIsIm92ZXJ2aWV3IjoiQSBidXJnZXItbG92aW5nIGhpdCBtYW4sIGhpcyBwaGlsb3NvcGhpY2FsIHBhcnRuZXIsIGEgZHJ1Zy1hZGRsZWQgZ2FuZ3N0ZXIncyBtb2xsIGFuZCBhIHdhc2hlZC11cCBib3hlciBjb252ZXJnZSBpbiB0aGlzIHNwcmF3bGluZywgY29tZWRpYyBjcmltZSBjYXBlci4gVGhlaXIgYWR2ZW50dXJlcyB1bmZ1cmwgaW4gdGhyZWUgc3RvcmllcyB0aGF0IGluZ2VuaW91c2x5IHRyaXAgYmFjayBhbmQgZm9ydGggaW4gdGltZS4iLCJwb3B1bGFyaXR5IjozODYuNDQ2LCJwb3N0ZXJfcGF0aCI6Ii9kNWlJbEZuNXMwSW1zell6QlBiOEpQSWZiWEQuanBnIiwicHJvZHVjdGlvbl9jb21wYW5pZXMiOlt7ImlkIjoxNCwibG9nb19wYXRoIjoiL202QUh1ODRvWlF4dnE3bjFyc3ZNTkpJQXNNdS5wbmciLCJuYW1lIjoiTWlyYW1heCIsIm9yaWdpbl9jb3VudHJ5IjoiVVMifSx7ImlkIjo1OSwibG9nb19wYXRoIjoiL3lIN09NZVN4aGZQMEFWTTZpVDByc0YzRjRaQy5wbmciLCJuYW1lIjoiQSBCYW5kIEFwYXJ0Iiwib3JpZ2luX2NvdW50cnkiOiJVUyJ9LHsiaWQiOjIxNiwibG9nb19wYXRoIjoiL2lLUHpDNll4cU5BazZmTW9UdEZoSUY1cDZ5dy5wbmciLCJuYW1lIjoiSmVyc2V5IEZpbG1zIiwib3JpZ2luX2NvdW50cnkiOiJVUyJ9XSwicHJvZHVjdGlvbl9jb3VudHJpZXMiOlt7Imlzb18zMTY2XzEiOiJVUyIsIm5hbWUiOiJVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EifV0sInJlbGVhc2VfZGF0ZSI6IjE5OTQtMDktMTAiLCJyZXZlbnVlIjoyMTM5MDAwMDAsInJ1bnRpbWUiOjE1NCwic3Bva2VuX2xhbmd1YWdlcyI6W3siZW5nbGlzaF9uYW1lIjoiRW5nbGlzaCIsImlzb182MzlfMSI6ImVuIiwibmFtZSI6IkVuZ2xpc2gifSx7ImVuZ2xpc2hfbmFtZSI6IlNwYW5pc2giLCJpc29fNjM5XzEiOiJlcyIsIm5hbWUiOiJFc3Bhw7FvbCJ9LHsiZW5nbGlzaF9uYW1lIjoiRnJlbmNoIiwiaXNvXzYzOV8xIjoiZnIiLCJuYW1lIjoiRnJhbsOnYWlzIn1dLCJzdGF0dXMiOiJSZWxlYXNlZCIsInRhZ2xpbmUiOiJZb3Ugd29uJ3Qga25vdyB0aGUgZmFjdHMgdW50aWwgeW91J3ZlIHNlZW4gdGhlIGZpY3Rpb24uIiwidGl0bGUiOiJQdWxwIEZpY3Rpb24iLCJ2aWRlbyI6ZmFsc2UsInZvdGVfYXZlcmFnZSI6OC40ODksInZvdGVfY291bnQiOjI3MDQ3fQ==
+  recorded_at: Fri, 10 May 2024 14:37:15 GMT
+recorded_with: VCR 6.2.0
