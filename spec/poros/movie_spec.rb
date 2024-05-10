@@ -16,14 +16,14 @@ RSpec.describe Movie do
     expect(movie.release_date).to eq("1994-09-10")
   end
 
-  xit "#format_runtime" do
+  it "#format_runtime" do
     movie = Movie.new(runtime: 90)
     formatted_runtime = movie.format_runtime(movie.runtime)
 
-    expect(formatted_runtime).to eq("1 hour and 30 minutes")
+    expect(formatted_runtime).to eq("1h and 30m")
   end
 
-  xit "#format_genres" do
+  it "#format_genres" do
     genres = [{ id: 1, name: "Action" }, { id: 2, name: "Comedy" }]
     movie = Movie.new(genres: genres)
     

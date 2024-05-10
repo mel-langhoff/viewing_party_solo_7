@@ -23,13 +23,13 @@ class Movie
 
   # should this be private?
   def format_runtime(runtime)
-    hours = runtime / 60
-    minutes = runtime % 60
+    hours = runtime.floor / 60
+    minutes = (runtime % 60).round.to_i
 
-    "#{hours} hours and #{minutes} minutes"
+    "#{hours}h and #{minutes}m"
   end
 
-  # def format_genres(genres)
-  #   genres.map { |genre| genre[:name] }.join(", ")
-  # end
+  def format_genres(genres)
+    genres.map { |genre| genre[:name] }.join(", ")
+  end
 end
