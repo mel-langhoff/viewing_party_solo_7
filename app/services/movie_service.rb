@@ -57,4 +57,8 @@ class MovieService
 
     response[:results]
   end
+
+  def get_deets(movie_id)
+    get_url("3/movie/#{movie_id}")
+  end
 end

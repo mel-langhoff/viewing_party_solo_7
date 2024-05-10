@@ -27,6 +27,12 @@ class MovieFacade
     movies_array.compact
   end
 
+  def movie(movie_id)
+    service = MovieService.new
+    movie_data = service.get_deets(movie_id)
+
+    Movie.new(movie_data)
+  end
   # def reviews(movie_id)
   #   service = MovieService.new
   #   json = service.get_movie_reviews(movie_id)

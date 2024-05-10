@@ -37,11 +37,10 @@ RSpec.describe MovieFacade do
   end
 
   it "#cast" do
-    VCR.use_cassette("cast_fac") do
-      facade = MovieFacade.new("Pulp Fiction")
-      movie_id = 123
+    facade = MovieFacade.new("Pulp Fiction")
 
-      cast = facade.cast(movie_id)
+    VCR.use_cassette("cast_fac") do
+      cast = facade.cast(680)
 
       expect(cast).to be_an(Array)
     end
@@ -69,6 +68,16 @@ RSpec.describe MovieFacade do
       reviews.each do |review|
         expect(review).to be_a Review
       end
+    end
+  end
+
+  it "#movie" do
+    facade = MovieFacade.new("Pulp Fiction")
+
+    VCR.use_cassette("movie_fac") do
+      movie = facade.movie(680)
+
+      expect(movie).to be_a Movie
     end
   end
 end

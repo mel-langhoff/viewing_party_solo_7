@@ -46,15 +46,15 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 ec4d04f2befcd6652834fd368a8b671e.cloudfront.net (CloudFront)
+      - 1.1 5babf08f08448687a0208408106aaed8.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DEN50-C2
+      - DEN52-C1
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - 3j1O6W-IoEQHbqn1ppTOkP8dDIbnj7fzVn0h9Q1MMbqzoRQL7-vAyA==
+      - RL3DYO4El2J7t_VrdtmtFG2QBB55vfuHQpIKvDqp9QkxtmqSr5fgLw==
       Age:
-      - '11919'
+      - '18311'
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg","genre_ids":[53,80],"id":680,"original_language":"en","original_title":"Pulp
@@ -87,7 +87,7 @@ http_interactions:
         Tragedy Of Macwes","overview":"The fearless knight Apallo learns that he is
         in over his head when attempting to proclaim his love to a princess.","popularity":0.6,"poster_path":"/iLBoU6n0OtnWF2MoUSVhBqeB8jS.jpg","release_date":"","title":"The
         Tragedy Of Macwes","video":false,"vote_average":0.0,"vote_count":0}],"total_pages":1,"total_results":6}'
-  recorded_at: Thu, 09 May 2024 23:27:16 GMT
+  recorded_at: Fri, 10 May 2024 01:13:48 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/search/movie?api_key=<MOVIE_DB_API_KEY>&include_adult=false&include_video=false&language=en-US&query=Pulp%20Fiction
@@ -134,15 +134,15 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 e7ff4a714a3b1f464db9c76ee954a564.cloudfront.net (CloudFront)
+      - 1.1 9427b8c01c70c4a2deb16eed5a2ced9c.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DEN50-C2
+      - DEN52-C1
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - 07VzOHKhUqKv3YSVq4x1GiqBPwViFJF3PxcNWKpQxo0Iq7eeEYNljg==
+      - dYRv-zPcBDuIA953JEAiGyID6WOsZcBzFWZyaYi3M3wD0tshwwDamA==
       Age:
-      - '11919'
+      - '18311'
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg","genre_ids":[53,80],"id":680,"original_language":"en","original_title":"Pulp
@@ -175,5 +175,5 @@ http_interactions:
         Tragedy Of Macwes","overview":"The fearless knight Apallo learns that he is
         in over his head when attempting to proclaim his love to a princess.","popularity":0.6,"poster_path":"/iLBoU6n0OtnWF2MoUSVhBqeB8jS.jpg","release_date":"","title":"The
         Tragedy Of Macwes","video":false,"vote_average":0.0,"vote_count":0}],"total_pages":1,"total_results":6}'
-  recorded_at: Thu, 09 May 2024 23:27:16 GMT
+  recorded_at: Fri, 10 May 2024 01:13:48 GMT
 recorded_with: VCR 6.2.0
