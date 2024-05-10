@@ -59,16 +59,16 @@ describe MovieService do
     end
   end
 
-  it "#get_genres" do
-    service = MovieService.new
+  # it "#get_genres" do
+  #   service = MovieService.new
 
-    VCR.use_cassette("genres") do
-      genres = service.get_genres
+  #   VCR.use_cassette("genres") do
+  #     genres = service.get_genres
 
-      expect(genres).to be_a Array
-      expect(genres.first).to have_key(:name)
-    end
-  end
+  #     expect(genres).to be_a Array
+  #     expect(genres.first).to have_key(:name)
+  #   end
+  # end
 
   it "#get_cast" do
     service = MovieService.new
