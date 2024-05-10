@@ -46,15 +46,15 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 350e87fe323bf8d725a381e15f465f40.cloudfront.net (CloudFront)
+      - 1.1 5950a1c2bfcf1f3e07bedbb2efad39f2.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - iJyLgKInG-lZWyyaP5105YlaL8lV0jQS2DsAd-iskifxgojgZ2IVlA==
+      - 6bH0PHO3Vqg15jAGCzE1u7HFcoD68zhc0aBvfQyTlchx4357a9yhUw==
       Age:
-      - '19834'
+      - '20272'
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg","genre_ids":[53,80],"id":680,"original_language":"en","original_title":"Pulp
@@ -87,5 +87,5 @@ http_interactions:
         Tragedy Of Macwes","overview":"The fearless knight Apallo learns that he is
         in over his head when attempting to proclaim his love to a princess.","popularity":0.6,"poster_path":"/iLBoU6n0OtnWF2MoUSVhBqeB8jS.jpg","release_date":"","title":"The
         Tragedy Of Macwes","video":false,"vote_average":0.0,"vote_count":0}],"total_pages":1,"total_results":6}'
-  recorded_at: Fri, 10 May 2024 01:39:11 GMT
+  recorded_at: Fri, 10 May 2024 01:46:29 GMT
 recorded_with: VCR 6.2.0

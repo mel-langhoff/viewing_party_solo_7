@@ -1,7 +1,7 @@
 <h1>Movie Details Page</h1>
 
-<%# button_to Create a Viewing Party %>
-<%# button_to Return to the Discover Page %>
+<%# link_to Create a Viewing Party %>
+<%= link_to 'Return to the Discover Page', user_discover_index_path(@user) %>
 
   <h3>Details and Info About <%= @movie.title %>:
     <ol>
